@@ -46,7 +46,7 @@ const Project = () => {
               A landing page for Fc Barcelona Club, built with React,
               TailwindCSS, and Firebase.
             </p>
-            <a to={"https://barcelona-landing-page.vercel.app/"}
+            <a href="https://barcelona-landing-page.vercel.app/"
               className="mt-6 bg-[#d9f99d] border-2 border-black px-4 py-2 font-semibold 
               shadow-[2px_2px_0px_black] hover:shadow-[4px_4px_0px_black]
               rounded-sm transition-all ease-in-out duration-300 w-fit"
@@ -73,7 +73,7 @@ const Project = () => {
               about films, including details, reviews, and ratings, built with
               React and TailwindCSS.
             </p>
-            <a to={"https://fmdb-practice-fetch-movie-api.vercel.app/"}
+            <a href="https://fmdb-practice-fetch-movie-api.vercel.app/"
               className="mt-6 bg-[#fef9c3] border-2 border-black px-4 py-2 font-semibold 
               shadow-[2px_2px_0px_black] hover:shadow-[4px_4px_0px_black]
               rounded-sm transition-all ease-in-out duration-300 w-fit"
@@ -115,7 +115,7 @@ const Project = () => {
             <p className="text-gray-600 font-inter">
               A Songfess & Menfess project for XII PPLG SMKN 4 Tasikmalaya.
             </p>
-            <a to={"https://pplg3songfessmenfess.netlify.app/"}
+            <a href="https://pplg3songfessmenfess.netlify.app/"
               className="mt-6 bg-[#fbcfe8] border-2 border-black px-4 py-2 font-semibold 
               shadow-[2px_2px_0px_black] hover:shadow-[4px_4px_0px_black]
               rounded-sm transition-all ease-in-out duration-300 w-fit"
@@ -140,7 +140,7 @@ const Project = () => {
             <p className="text-gray-600 font-inter">
               A first portfolio website built with Next.js, and TailwindCSS.
             </p>
-            <a to={"https://fathfnc-portofolio.vercel.app/"}
+            <a href="https://fathfnc-portofolio.vercel.app/"
               className="mt-6 bg-[#bae6fd] border-2 border-black px-4 py-2 font-semibold 
               shadow-[2px_2px_0px_black] hover:shadow-[4px_4px_0px_black]
               rounded-sm transition-all ease-in-out duration-300 w-fit"
@@ -182,7 +182,7 @@ const Project = () => {
             <p className="text-gray-600 font-inter">
                 A website for SMKN 4 Kota Tasikmalaya school built with HTML, CSS, and Bootstrap.
             </p>
-            <a to={"https://smkn4tasikmalaya.netlify.app/"}
+            <a href="https://smkn4tasikmalaya.netlify.app/"
               className="mt-6 bg-green-200 border-2 border-black px-4 py-2 font-semibold 
               shadow-[2px_2px_0px_black] hover:shadow-[4px_4px_0px_black]
               rounded-sm transition-all ease-in-out duration-300 w-fit"

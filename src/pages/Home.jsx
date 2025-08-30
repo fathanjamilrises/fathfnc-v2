@@ -65,14 +65,16 @@ const Home = () => {
           </p>
 
           <div className="flex gap-4">
-            <Link to={"/about"}
+            <Link
+              to={"/about"}
               className="mt-8 bg-[#bafca2] border-2 border-black px-6 py-3 font-semibold 
               shadow-[2px_2px_0px_black] hover:shadow-[4px_4px_0px_black]
               rounded-md transition-all transform ease-in-out duration-300"
             >
               About Me
             </Link>
-            <a href="#contact-info" 
+            <a
+              href="#contact-info"
               className="mt-8 bg-white border-2 border-black px-6 py-3 font-semibold 
               shadow-[2px_2px_0px_black] hover:shadow-[4px_4px_0px_black]
               rounded-md transition-all transform ease-in-out duration-300"
@@ -202,7 +204,7 @@ const Home = () => {
               TailwindCSS, and Firebase.
             </p>
             <a
-              to={"https://barcelona-landing-page.vercel.app/"}
+              href="https://barcelona-landing-page.vercel.app/"
               className="mt-6 bg-[#d9f99d] border-2 border-black px-4 py-2 font-semibold 
               shadow-[2px_2px_0px_black] hover:shadow-[4px_4px_0px_black]
               rounded-sm transition-all ease-in-out duration-300 w-fit"
@@ -230,7 +232,7 @@ const Home = () => {
               React and TailwindCSS.
             </p>
             <a
-              to={"https://fmdb-practice-fetch-movie-api.vercel.app/"}
+              href="https://fmdb-practice-fetch-movie-api.vercel.app/"
               className="mt-6 bg-[#fef9c3] border-2 border-black px-4 py-2 font-semibold 
               shadow-[2px_2px_0px_black] hover:shadow-[4px_4px_0px_black]
               rounded-sm transition-all ease-in-out duration-300 w-fit"
@@ -273,7 +275,7 @@ const Home = () => {
               A Songfess & Menfess project for XII PPLG SMKN 4 Tasikmalaya.
             </p>
             <a
-              to={"https://pplg3songfessmenfess.netlify.app/"}
+              href="https://pplg3songfessmenfess.netlify.app/"
               className="mt-6 bg-[#fbcfe8] border-2 border-black px-4 py-2 font-semibold 
               shadow-[2px_2px_0px_black] hover:shadow-[4px_4px_0px_black]
               rounded-sm transition-all ease-in-out duration-300 w-fit"
