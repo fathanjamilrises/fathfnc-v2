@@ -201,14 +201,14 @@ const Home = () => {
               A landing page for Fc Barcelona Club, built with React,
               TailwindCSS, and Firebase.
             </p>
-            <Link
+            <a
               to={"https://barcelona-landing-page.vercel.app/"}
               className="mt-6 bg-[#d9f99d] border-2 border-black px-4 py-2 font-semibold 
               shadow-[2px_2px_0px_black] hover:shadow-[4px_4px_0px_black]
               rounded-sm transition-all ease-in-out duration-300 w-fit"
             >
               View Now ↗
-            </Link>
+            </a>
           </div>
 
           {/* Project 2 */}
@@ -229,14 +229,14 @@ const Home = () => {
               about films, including details, reviews, and ratings, built with
               React and TailwindCSS.
             </p>
-            <Link
+            <a
               to={"https://fmdb-practice-fetch-movie-api.vercel.app/"}
               className="mt-6 bg-[#fef9c3] border-2 border-black px-4 py-2 font-semibold 
               shadow-[2px_2px_0px_black] hover:shadow-[4px_4px_0px_black]
               rounded-sm transition-all ease-in-out duration-300 w-fit"
             >
               View Now ↗
-            </Link>
+            </a>
           </div>
           <div className="border-r-2 border-b-3 border-black order-3 md:order-4">
             <img
@@ -272,14 +272,14 @@ const Home = () => {
             <p className="text-gray-600 font-inter">
               A Songfess & Menfess project for XII PPLG SMKN 4 Tasikmalaya.
             </p>
-            <Link
+            <a
               to={"https://pplg3songfessmenfess.netlify.app/"}
               className="mt-6 bg-[#fbcfe8] border-2 border-black px-4 py-2 font-semibold 
               shadow-[2px_2px_0px_black] hover:shadow-[4px_4px_0px_black]
               rounded-sm transition-all ease-in-out duration-300 w-fit"
             >
               View Now ↗
-            </Link>
+            </a>
           </div>
         </div>
         <div className="mt-20 mb-20 flex justify-center items-center w-full">
