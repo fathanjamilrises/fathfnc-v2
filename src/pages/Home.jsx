@@ -65,20 +65,20 @@ const Home = () => {
           </p>
 
           <div className="flex gap-4">
-            <button
+            <Link to={"/about"}
               className="mt-8 bg-[#bafca2] border-2 border-black px-6 py-3 font-semibold 
               shadow-[2px_2px_0px_black] hover:shadow-[4px_4px_0px_black]
               rounded-md transition-all transform ease-in-out duration-300"
             >
               About Me
-            </button>
-            <button
+            </Link>
+            <a href="#contact-info" 
               className="mt-8 bg-white border-2 border-black px-6 py-3 font-semibold 
               shadow-[2px_2px_0px_black] hover:shadow-[4px_4px_0px_black]
               rounded-md transition-all transform ease-in-out duration-300"
             >
               Contact Me
-            </button>
+            </a>
           </div>
         </div>
 

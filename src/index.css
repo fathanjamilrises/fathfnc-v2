@@ -7,3 +7,7 @@
   -webkit-text-stroke: 3px #000;
   paint-order: stroke fill;
 }
+
+html {
+  scroll-behavior: smooth;
+}
