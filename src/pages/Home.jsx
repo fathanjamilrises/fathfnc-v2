@@ -174,7 +174,7 @@ const Home = () => {
           </h2>
         </div>
         <div className="grid md:grid-cols-2 border-t-2 border-l-2  border-black font-satoshi">
-           {/* Project 1 */}
+          {/* Project 1 */}
           <div className="border-r-2 border-b-3 border-black order-1">
             <img
               src="../assets/image/project-1.png"
@@ -201,7 +201,8 @@ const Home = () => {
               A landing page for Fc Barcelona Club, built with React,
               TailwindCSS, and Firebase.
             </p>
-            <Link to={"https://barcelona-landing-page.vercel.app/"}
+            <Link
+              to={"https://barcelona-landing-page.vercel.app/"}
               className="mt-6 bg-[#d9f99d] border-2 border-black px-4 py-2 font-semibold 
               shadow-[2px_2px_0px_black] hover:shadow-[4px_4px_0px_black]
               rounded-sm transition-all ease-in-out duration-300 w-fit"
@@ -228,7 +229,8 @@ const Home = () => {
               about films, including details, reviews, and ratings, built with
               React and TailwindCSS.
             </p>
-            <Link to={"https://fmdb-practice-fetch-movie-api.vercel.app/"}
+            <Link
+              to={"https://fmdb-practice-fetch-movie-api.vercel.app/"}
               className="mt-6 bg-[#fef9c3] border-2 border-black px-4 py-2 font-semibold 
               shadow-[2px_2px_0px_black] hover:shadow-[4px_4px_0px_black]
               rounded-sm transition-all ease-in-out duration-300 w-fit"
@@ -270,7 +272,8 @@ const Home = () => {
             <p className="text-gray-600 font-inter">
               A Songfess & Menfess project for XII PPLG SMKN 4 Tasikmalaya.
             </p>
-            <Link to={"https://pplg3songfessmenfess.netlify.app/"}
+            <Link
+              to={"https://pplg3songfessmenfess.netlify.app/"}
               className="mt-6 bg-[#fbcfe8] border-2 border-black px-4 py-2 font-semibold 
               shadow-[2px_2px_0px_black] hover:shadow-[4px_4px_0px_black]
               rounded-sm transition-all ease-in-out duration-300 w-fit"
@@ -278,9 +281,10 @@ const Home = () => {
               View Now ↗
             </Link>
           </div>
-          </div>
+        </div>
         <div className="mt-20 mb-20 flex justify-center items-center w-full">
-          <Link to={"/project"} target="_blank" rel="noopener noreferrer"
+          <Link
+            to={"/project"}
             className="mt-8 bg-[#bafca2] border-2 border-black px-6 py-3 font-semibold w-fit
               shadow-[2px_2px_0px_black] hover:shadow-[4px_4px_0px_black]
               rounded-md transition-all transform ease-in-out duration-300"
