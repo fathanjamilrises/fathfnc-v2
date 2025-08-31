@@ -1,0 +1,42 @@
+{
+  "home": {
+    "intro": "Hi, My Name Is Fathan Jamil.",
+    "typingPrefix": "Hello I'm A",
+    "desc": "Hello I'm Fathan Jamil, a Frontend Developer who specializes in crafting visually stunning and highly responsive web interfaces.",
+    "aboutBtn": "About Me",
+    "contactBtn": "Contact Me",
+    "expertise": "My Expertise",
+    "services": "Services I Provide",
+    "service1": {
+      "title": "Web UI/UX Design",
+      "desc": "Crafting modern, user-friendly, and visually appealing web interfaces with a focus on usability, accessibility, and interactive experiences."
+    },
+    "service2": {
+      "title": "Fullstack Web",
+      "desc": "Building complete web applications from front to back — handling everything from databases and APIs to frontend interactions."
+    },
+    "service3": {
+      "title": "Frontend Web",
+      "desc": "Developing fast, responsive, and modern user interfaces using React, Next.js, and Tailwind CSS for seamless user experiences."
+    },
+    "portfolio": "Portfolio",
+    "projects": "My Latest Projects",
+    "project1": {
+      "title": "Barcelona Landing Page Website",
+      "desc": "A landing page for Fc Barcelona Club, built with React, TailwindCSS, and Firebase.",
+      "view": "View Now ↗"
+    },
+    "project2": {
+      "title": "FMDB Movie Database Platform",
+      "desc": "A movie database platform that provides comprehensive information about films, including details, reviews, and ratings, built with React and TailwindCSS.",
+      "view": "View Now ↗"
+    },
+    "project3": {
+      "title": "XII PPLG Songfess & Menfess",
+      "desc": "A Songfess & Menfess project for XII PPLG SMKN 4 Tasikmalaya.",
+      "view": "View Now ↗"
+    },
+    "allProjects": "View All Projects",
+    "roles": ["Frontend Developer", "Designer", "Coder", "UI/UX Enthusiast"]
+  }
+}

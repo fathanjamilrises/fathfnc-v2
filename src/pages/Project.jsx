@@ -1,8 +1,66 @@
 import { Link } from "react-router-dom";
 import Footer from "../component/Footer";
 import Navbar from "../component/Navbar";
+import { useLanguage } from "../context/LanguageContext";
 
 const Project = () => {
+  const { language } = useLanguage();
+
+  const translations = {
+    en: {
+      title: "Projects",
+      subtitle: "See all my projects",
+      viewNow: "View Now ↗",
+      project1: {
+        title: "Barcelona Landing Page Website",
+        desc: "A landing page for Fc Barcelona Club, built with React, TailwindCSS, and Firebase.",
+      },
+      project2: {
+        title: "FMDB Movie Database Platform",
+        desc: "A movie database platform that provides comprehensive information about films, including details, reviews, and ratings, built with React and TailwindCSS.",
+      },
+      project3: {
+        title: "XII PPLG Songfess & Menfess",
+        desc: "A Songfess & Menfess project for XII PPLG SMKN 4 Tasikmalaya.",
+      },
+      project4: {
+        title: "Portfolio Website v1",
+        desc: "A first portfolio website built with Next.js, and TailwindCSS.",
+      },
+      project5: {
+        title: "SMKN 4 Kota Tasikmalaya Website",
+        desc: "A website for SMKN 4 Kota Tasikmalaya school built with HTML, CSS, and Bootstrap.",
+      },
+    },
+    id: {
+      title: "Proyek",
+      subtitle: "Lihat semua proyek saya",
+      viewNow: "Lihat Sekarang ↗",
+      project1: {
+        title: "Website Landing Page Barcelona",
+        desc: "Sebuah landing page untuk klub Fc Barcelona, dibuat dengan React, TailwindCSS, dan Firebase.",
+      },
+      project2: {
+        title: "Platform Database Film FMDB",
+        desc: "Sebuah platform database film yang menyediakan informasi lengkap tentang film, termasuk detail, ulasan, dan rating, dibuat dengan React dan TailwindCSS.",
+      },
+      project3: {
+        title: "XII PPLG Songfess & Menfess",
+        desc: "Proyek Songfess & Menfess untuk XII PPLG SMKN 4 Tasikmalaya.",
+      },
+      project4: {
+        title: "Website Portofolio v1",
+        desc: "Website portofolio pertama yang dibuat dengan Next.js dan TailwindCSS.",
+      },
+      project5: {
+        title: "Website SMKN 4 Kota Tasikmalaya",
+        desc: "Website untuk sekolah SMKN 4 Kota Tasikmalaya yang dibuat dengan HTML, CSS, dan Bootstrap.",
+      },
+    },
+  };
+
+  const t = translations[language];
+
   return (
     <div className="min-h-screen flex flex-col bg-[#f9f5f2] font-satoshi">
       <Navbar />
@@ -12,12 +70,15 @@ const Project = () => {
         <div className="w-full mx-auto text-center py-10 md:py-14 border-b-3 border-black">
           <h2
             className="text-3xl md:text-4xl lg:text-5xl text-center font-black text-[#bafca2] font-satoshi mt-2 
-  drop-shadow-[2px_2px_0px_#000000] outline-text"
+            drop-shadow-[2px_2px_0px_#000000] outline-text"
           >
-        Projects
+            {t.title}
           </h2>
-          <p className="mt-4 text-base md:text-lg font-semibold text-center">See all my projects</p>
+          <p className="mt-4 text-base md:text-lg font-semibold text-center">
+            {t.subtitle}
+          </p>
         </div>
+
         <div className="grid md:grid-cols-2 border-t-2 border-l-2 border-black font-satoshi">
           {/* Project 1 */}
           <div className="border-r-2 border-b-3 border-black order-1">
@@ -40,18 +101,16 @@ const Project = () => {
               </span>
             </div>
             <h3 className="text-2xl font-bold font-satoshi mb-2">
-              Barcelona Landing Page Website
+              {t.project1.title}
             </h3>
-            <p className="text-gray-600 font-inter">
-              A landing page for Fc Barcelona Club, built with React,
-              TailwindCSS, and Firebase.
-            </p>
-            <a href="https://barcelona-landing-page.vercel.app/"
+            <p className="text-gray-600 font-inter">{t.project1.desc}</p>
+            <a
+              href="https://barcelona-landing-page.vercel.app/"
               className="mt-6 bg-[#d9f99d] border-2 border-black px-4 py-2 font-semibold 
               shadow-[2px_2px_0px_black] hover:shadow-[4px_4px_0px_black]
               rounded-sm transition-all ease-in-out duration-300 w-fit"
             >
-              View Now ↗
+              {t.viewNow}
             </a>
           </div>
 
@@ -66,19 +125,16 @@ const Project = () => {
               </span>
             </div>
             <h3 className="text-2xl font-bold font-satoshi mb-2">
-              FMDB Movie Database Platform
+              {t.project2.title}
             </h3>
-            <p className="text-gray-600 font-inter">
-              A movie database platform that provides comprehensive information
-              about films, including details, reviews, and ratings, built with
-              React and TailwindCSS.
-            </p>
-            <a href="https://fmdb-practice-fetch-movie-api.vercel.app/"
+            <p className="text-gray-600 font-inter">{t.project2.desc}</p>
+            <a
+              href="https://fmdb-practice-fetch-movie-api.vercel.app/"
               className="mt-6 bg-[#fef9c3] border-2 border-black px-4 py-2 font-semibold 
               shadow-[2px_2px_0px_black] hover:shadow-[4px_4px_0px_black]
               rounded-sm transition-all ease-in-out duration-300 w-fit"
             >
-              View Now ↗
+              {t.viewNow}
             </a>
           </div>
           <div className="border-r-2 border-b-3 border-black order-3 md:order-4">
@@ -110,17 +166,16 @@ const Project = () => {
               </span>
             </div>
             <h3 className="text-2xl font-bold font-satoshi mb-2">
-              XII PPLG Songfess & Menfess
+              {t.project3.title}
             </h3>
-            <p className="text-gray-600 font-inter">
-              A Songfess & Menfess project for XII PPLG SMKN 4 Tasikmalaya.
-            </p>
-            <a href="https://pplg3songfessmenfess.netlify.app/"
+            <p className="text-gray-600 font-inter">{t.project3.desc}</p>
+            <a
+              href="https://pplg3songfessmenfess.netlify.app/"
               className="mt-6 bg-[#fbcfe8] border-2 border-black px-4 py-2 font-semibold 
               shadow-[2px_2px_0px_black] hover:shadow-[4px_4px_0px_black]
               rounded-sm transition-all ease-in-out duration-300 w-fit"
             >
-              View Now ↗
+              {t.viewNow}
             </a>
           </div>
 
@@ -135,17 +190,16 @@ const Project = () => {
               </span>
             </div>
             <h3 className="text-2xl font-bold font-satoshi mb-2">
-              Portfolio Website v1
+              {t.project4.title}
             </h3>
-            <p className="text-gray-600 font-inter">
-              A first portfolio website built with Next.js, and TailwindCSS.
-            </p>
-            <a href="https://fathfnc-portofolio.vercel.app/"
+            <p className="text-gray-600 font-inter">{t.project4.desc}</p>
+            <a
+              href="https://fathfnc-portofolio.vercel.app/"
               className="mt-6 bg-[#bae6fd] border-2 border-black px-4 py-2 font-semibold 
               shadow-[2px_2px_0px_black] hover:shadow-[4px_4px_0px_black]
               rounded-sm transition-all ease-in-out duration-300 w-fit"
             >
-              View Now ↗
+              {t.viewNow}
             </a>
           </div>
           <div className="border-r-2 border-b-3 border-black order-7 md:order-8">
@@ -156,7 +210,7 @@ const Project = () => {
             />
           </div>
 
-           {/* Project 5 */}
+          {/* Project 5 */}
           <div className="border-r-2 border-b-3 border-black order-10 md:order-9">
             <img
               src="../assets/image/project-5.png"
@@ -177,17 +231,16 @@ const Project = () => {
               </span>
             </div>
             <h3 className="text-2xl font-bold font-satoshi mb-2">
-              SMKN 4 Kota Tasikmalaya Website
+              {t.project5.title}
             </h3>
-            <p className="text-gray-600 font-inter">
-                A website for SMKN 4 Kota Tasikmalaya school built with HTML, CSS, and Bootstrap.
-            </p>
-            <a href="https://smkn4tasikmalaya.netlify.app/"
+            <p className="text-gray-600 font-inter">{t.project5.desc}</p>
+            <a
+              href="https://smkn4tasikmalaya.netlify.app/"
               className="mt-6 bg-green-200 border-2 border-black px-4 py-2 font-semibold 
               shadow-[2px_2px_0px_black] hover:shadow-[4px_4px_0px_black]
               rounded-sm transition-all ease-in-out duration-300 w-fit"
             >
-              View Now ↗
+              {t.viewNow}
             </a>
           </div>
         </div>
